@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    {% if result == 'not an integer' %}
+        <p>You did not enter an integer.</p>
+    {% else %}
+        <p>The number you entered is {{ result }}.</p>
+    {% endif %}
+    <p><a href="{{ url_for('index') }}">Enter another number</a></p>
+{% endblock %}
